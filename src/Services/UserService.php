@@ -72,9 +72,10 @@ class UserService
                            
         }
         $idProfil = $this->profilRepository->findOneBy(['libelle' => $profil])->getId();
-        $user['profil'] = "/api/admin/profils/".$idProfil;           
+        $user['profil'] = "/api/admin/profils/".$idProfil;
+       /* dd($userType);*/
         $users = $this->serializer->denormalize($user,$userType);
-        // dd($users);
+         /*dd($users);*/
         //encode password
         $errors = $this->validator->validate($users); 
         if (count($errors)>0){

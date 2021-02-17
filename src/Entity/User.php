@@ -12,6 +12,8 @@ use Doctrine\ORM\Mapping\InheritanceType;
 use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Annotation\ApiFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -19,6 +21,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\InheritanceType("SINGLE_TABLE")
  * @ORM\DiscriminatorColumn(name="type", type="string")
  * @ORM\DiscriminatorMap({"admin"="Admin","apprenant"="Apprenant", "cm"="CM" , "formateur"="Formateur" ,"user"="User"})
+ *@ApiFilter(BooleanFilter::class, properties={"archive"})
  * @ApiResource(
  *      
  *  attributes={
@@ -53,6 +56,11 @@ use Symfony\Component\Security\Core\User\UserInterface;
 *      "path"="/admin/users/{id}",
  *      "methods"={"PUT"},
  *   },
+ *  "DELETE"={
+ *     
+*      "path"="/admin/users/{id}",
+ *      
+ *   },
  *  },
  * )
  */
@@ -62,7 +70,9 @@ class User implements UserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"profil:read","user:read","user:write"})
+     * @Groups({"profil:read","user:read","user:write" ,
+     * "promo:read","promo:write","grp:read",
+     * "apprenants:read","groupe:write","grpes:read","rfa:read","rfg:read"})
      */
     private $id;
 
@@ -72,8 +82,9 @@ class User implements UserInterface
      * @Assert\Email(message="veuillez entrer un email valide")
      */
     private $email;
-
-   
+/**
+ * @Groups({"user:read"})
+  */
     private $roles = [];
 
     /**
@@ -85,7 +96,7 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     private $archive=0;
 
@@ -93,6 +104,7 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      * @Groups({"profil:read","user:read","user:write"})
      * @Assert\NotBlank(message="veuillez entrer votre nom")
+     * @Groups({"grpes:read","rfg:read"})
      */
     private $nom;
 
@@ -100,6 +112,7 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      * @Groups({"profil:read","user:read","user:write"})
      * @Assert\NotBlank(message="veuillez entrer votre prenom")
+     * @Groups({"grpes:read","rfg:read"})
      */
     private $prenom;
 
@@ -113,16 +126,16 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"profil:read","user:read","user:write"})
-     * @Assert\NotBlank(message="veuillez entrer le telephone")
+
      */
-    private $Telephone;
+    private $Telephone = "777777";
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"profil:read","user:read","user:write"})
-     * @Assert\NotBlank(message="veuillez entrer l'adressse")
+
      */
-    private $Adresse;
+    private $Adresse = "adress";
 
     /**
      * @ORM\Column(type="blob",nullable=true)
@@ -210,12 +223,12 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function getArchive(): ?int
+    public function getArchive(): ?bool
     {
         return $this->archive;
     }
 
-    public function setArchive(int $archive): self
+    public function setArchive(bool $archive): self
     {
         $this->archive = $archive;
 

@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use App\Entity\User;
-use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ProfilRepository;
 use ApiPlatform\Core\Annotation\ApiFilter;
@@ -11,12 +10,17 @@ use Doctrine\Common\Collections\Collection;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-// use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Core\Bridge\Elasticsearch\DataProvider\Filter\TermFilter;
+
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
  * @UniqueEntity("libelle")
+ * @ApiFilter(SearchFilter::class, properties={"statut":"exact"})
  * @ApiResource(
  *  attributes={
  *      "denormalization_context"={"groups"={"user:write"}},
@@ -64,7 +68,7 @@ class Profil
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * 
+     * @Groups({"profil:read"})
      */
     private $id;
     /**
@@ -73,7 +77,7 @@ class Profil
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"profil:read","user:write"})
+     * @Groups({"profil:read","user:write","user:read"})
      *
      */
     private $libelle;
@@ -81,14 +85,13 @@ class Profil
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="profil")
      * @Assert\NotBlank(message="veuillez entrer  le libelle")
-    
-     */
+        */
     private $users;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $statut;
+    private $statut="0";
 
      
 

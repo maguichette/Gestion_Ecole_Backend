@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Services\PutService;
 use App\Services\UserService;
-use App\Controller\UserController;
+
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -61,10 +61,10 @@ class UserController extends AbstractController
      * }
      * )
      */
-    public function modif_user($id,PutService $service,Request $request, UserRepository $repo, EntityManagerInterface $em, UserPasswordEncoderInterface $encoder){
+    public function modif_user ($id,PutService $service,Request $request, UserRepository $repo, EntityManagerInterface $em, UserPasswordEncoderInterface $encoder){
         $user=$service->PutUser($request,'avatar');
-        // dd($user);
-        $utilisateurs=$repo->find($id);
+        /*dd($user);*/
+        $utilisateurs = $repo->find($id);
       
         // dd($utilisateurs);
         foreach ($user as $key => $valeur) {

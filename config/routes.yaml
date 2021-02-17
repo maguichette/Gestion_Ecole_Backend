@@ -2,3 +2,7 @@
 authentication_token:
     path: /api/login
     methods: ['POST']
+     
+ #route   
+get_promo_id_principal:    
+    path: /admin/promo/{id}/principal

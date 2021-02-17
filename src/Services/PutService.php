@@ -46,10 +46,12 @@ class PutService
         $raw =$request->getContent();
 
     //    dd($raw);
+
         $delimiteur = "multipart/form-data; boundary=";
-        $boundary= "--" . explode($delimiteur,$request->headers->get("content-type"))[1];
+        $ok=explode($delimiteur,$request->headers->get("content-type"))[1];
+        $boundary= "--" . $ok;
         $elements = str_replace([$boundary,'Content-Disposition: form-data;',"name="],"",$raw);
-        // dd($elements);
+        //dd($boundary);
         $elementsTab = explode("\r\n\r\n",$elements);
         // dd($elementsTab);
         $data =[];

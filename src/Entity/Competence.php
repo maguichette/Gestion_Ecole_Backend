@@ -17,7 +17,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  * message="le libelle doit etre unique"
  * )
  * @ApiResource(
- *  normalizationContext={"groups"={"competence:read"}},
+ * normalizationContext={"groups"={"competence:read"}},
  * denormalizationContext={"groups"={"competence:write"}},
  * collectionOperations={
  *      "get"={
@@ -60,7 +60,7 @@ class Competence
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"competence:write","grpcomp:read","grpcompetence:write","grpecompetence:read"})
+     * @Groups({"competence:write","grpcomp:read","grpcompetence:write","grpecompetence:read","competence:read"})
      */
     private $libelle;
 

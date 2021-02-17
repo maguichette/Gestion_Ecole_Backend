@@ -1,6 +1,5 @@
 <?php
 namespace App\DataPersister;
-
 use App\Entity\Profil;
 use App\DataPersister\Persiste;
 use App\Repository\UserRepository;
