@@ -26,14 +26,21 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * },
  *  itemOperations={
   *
-  *      "get",
+  *      "get_profils_sortie"={
+ *          "method"= "GET",
+ *          "path" = "/profils_sorties/{id}"
+ *      },
   *
   *
   *
   *      "edit_profils_sortie"={
   *          "method"= "PUT",
   *          "path" = "/profils_sorties/{id}"
-  *      }
+  *      },
+ *     "delete_profils_sortie"={
+ *          "method"= "DELETE",
+ *          "path" = "/profils_sorties/{id}"
+ *      },
   *
   * }
  * )

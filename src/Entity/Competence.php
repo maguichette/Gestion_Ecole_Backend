@@ -45,6 +45,11 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *          "path"= "/admin/competences/{id}",
  *          "security" = "is_granted('ROLE_Admin')",
  *      },
+ *     "delete_levels"={
+ *          "method"= "DELETE",
+ *          "path"= "/admin/competences/{id}",
+ *          "security" = "is_granted('ROLE_Admin')",
+ *      },
  *  },
  * )
  * @ORM\Entity(repositoryClass=CompetenceRepository::class)
@@ -55,6 +60,7 @@ class Competence
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"competence:write","grpcomp:read","grpcompetence:write","grpecompetence:read","competence:read"})
      */
     private $id;
 

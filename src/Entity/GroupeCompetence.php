@@ -57,13 +57,13 @@ class GroupeCompetence
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * @Groups({"competence:write","grpecompetence:read","referentiels:write"})
+     * @Groups({"competence:write","grpecompetence:read","referentiels:write","competence:read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"grpecompetence:read","groupecompetence:read","grpcompetence:write","referentiels:write"})
+     * @Groups({"grpecompetence:read","groupecompetence:read","grpcompetence:write","referentiels:write","competence:read"})
      */
     private $libelle;
 

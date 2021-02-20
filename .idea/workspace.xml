@@ -5,61 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="678968d5-5341-4de8-8654-025e2b60745a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/liveSa/src/assets/image/magui.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Event/JwtCreatedSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp-angular/src/assets/avatar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp-angular/src/assets/magui.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liveSa/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liveSa/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liveSa/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liveSa/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liveSa/src/app/bien/detail-bien/detail-bien.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liveSa/src/app/bien/detail-bien/detail-bien.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liveSa/src/app/bien/jumbotron/jumbotron.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/liveSa/src/app/bien/jumbotron/jumbotron.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liveSa/src/app/bien/jumbotron/jumbotron.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/liveSa/src/app/bien/jumbotron/jumbotron.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201119150951.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201119152644.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201124095734.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201124100050.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201127082818.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201127152418.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201127152754.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ApprenantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ApprenantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CompetenceFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CompetenceFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/GroupeCompetencesFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/GroupeCompetencesFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataPersister/Persiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPersister/Persiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Apprenant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Apprenant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Competence.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Competence.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Formateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Formateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/GroupeCompetence.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/GroupeCompetence.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Niveau.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Niveau.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CompetenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CompetenceRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/GroupeCompetenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/GroupeCompetenceRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/NivauRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/NivauRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/NiveauRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/NiveauRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/PutService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/PutService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apprenant/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apprenant/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/src/app/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/src/app/biens/add-biens/add-biens.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/src/app/biens/add-biens/add-biens.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-angular/src/app/biens/add-biens/add-biens.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tp-angular/src/app/biens/add-biens/add-biens.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ProfilSortie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ProfilSortie.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,6 +169,9 @@
       <workItem from="1612719698811" duration="17178000" />
       <workItem from="1613048442754" duration="9227000" />
       <workItem from="1613412727009" duration="2349000" />
+      <workItem from="1613597072689" duration="4199000" />
+      <workItem from="1613835403014" duration="1582000" />
+      <workItem from="1613842971166" duration="621000" />
     </task>
     <servers />
   </component>
